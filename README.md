@@ -1,36 +1,116 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Chat Gig - Landing Page
+
+A modern, minimalistic SaaS landing page for Chat Gig - "Fiverr for ChatGPT"
+
+## Features
+
+- Next.js 15 with App Router
+- TypeScript
+- Tailwind CSS with custom design system
+- shadcn/ui components
+- Responsive design
+- Subtle animations
+- SEO optimized
 
 ## Getting Started
 
-First, run the development server:
+### Development
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+chat-gig/
+├── app/
+│   ├── layout.tsx          # Root layout with metadata
+│   ├── page.tsx            # Main landing page
+│   └── globals.css         # Global styles & design system
+├── components/
+│   ├── ui/                 # shadcn components
+│   ├── sections/           # Page sections
+│   │   ├── Hero.tsx
+│   │   ├── VideoDemo.tsx
+│   │   ├── Features.tsx
+│   │   ├── HowItWorks.tsx
+│   │   ├── Testimonials.tsx
+│   │   ├── FAQ.tsx
+│   │   └── Footer.tsx
+│   └── AvatarGroup.tsx
+└── public/                 # Static assets
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Customization
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Adding Suisse Intl Font
 
-## Deploy on Vercel
+1. Add your Suisse Intl font files to `public/fonts/`
+2. Update `app/globals.css` with @font-face declarations
+3. The CSS variables are already set up to use Suisse Intl
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Adding Logo
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Place your logo in `public/`
+2. Update the logo placeholder in `components/sections/Footer.tsx`
+
+### Embedding Tally Form
+
+Replace the button links in `components/sections/Hero.tsx`:
+
+```tsx
+// For waitlist
+<a href="YOUR_TALLY_FORM_URL">Join the waitlist</a>
+
+// For freelancers
+<a href="YOUR_FREELANCER_TALLY_FORM_URL">I'm a freelancer</a>
+```
+
+### Adding Video
+
+Update `components/sections/VideoDemo.tsx` with your video URL:
+
+```tsx
+<iframe
+  src="YOUR_VIDEO_URL"
+  // ... other props
+/>
+```
+
+## Design System
+
+The design system uses Ghost Team brand colors:
+- Primary Green: `rgb(27, 200, 140)`
+- Primary Green Dark: `rgb(20, 160, 112)`
+- Black: `rgb(26, 26, 26)`
+
+All colors and design tokens are defined in `app/globals.css` as CSS variables.
+
+## Sections
+
+1. **Hero** - Main heading with CTAs and avatar group showing waitlist count
+2. **Video Demo** - Full-width video demonstration
+3. **Features** - 4 key features with icons
+4. **How It Works** - 3-step process
+5. **Testimonials** - Social proof from early users
+6. **FAQ** - Accordion-style frequently asked questions
+7. **Footer** - Minimal footer with product links
+
+## Tech Stack
+
+- **Framework:** Next.js 15
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Components:** shadcn/ui
+- **Icons:** Heroicons (inline SVG)
+- **Font:** Geist (placeholder for Suisse Intl)
