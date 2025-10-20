@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 
 const suisseIntl = localFont({
@@ -61,6 +62,7 @@ export default function RootLayout({
         className={`${suisseIntl.variable} font-sans antialiased`}
       >
         {children}
+        <GoogleAnalytics gaId="G-GJ9T5BF59M" />
       </body>
     </html>
   );
