@@ -7,7 +7,7 @@ const testimonials = [
       "Chat Gig saved me hours of back-and-forth emails. I just described what I needed in ChatGPT, and it generated a perfect brief for my developer.",
     author: "Sarah Chen",
     role: "Startup Founder",
-    avatar: "/testimonials/1.jpg",
+    avatar: "https://i.pravatar.cc/150?img=47",
     fallback: "SC",
   },
   {
@@ -15,7 +15,7 @@ const testimonials = [
       "As a freelancer, I love receiving briefs from Chat Gig. They're clear, detailed, and have everything I need to provide an accurate quote.",
     author: "Marcus Rodriguez",
     role: "Freelance Designer",
-    avatar: "/testimonials/2.jpg",
+    avatar: "https://i.pravatar.cc/150?img=33",
     fallback: "MR",
   },
   {
@@ -23,7 +23,7 @@ const testimonials = [
       "The vibe coding session to structured brief pipeline is genius. I can brainstorm freely and still end up with professional documentation.",
     author: "Jamie Lin",
     role: "Product Manager",
-    avatar: "/testimonials/3.jpg",
+    avatar: "https://i.pravatar.cc/150?img=20",
     fallback: "JL",
   },
 ];

@@ -1,10 +1,8 @@
 export function FreelancersHero() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-[var(--color-green-ultralight)] via-white to-[var(--color-green-ultralight)] py-20 sm:py-32">
-      {/* Animated gradient orbs */}
-      <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-gradient-to-br from-[var(--color-ghostteam-green)]/20 to-transparent rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" aria-hidden="true" />
-      <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-gradient-to-tl from-[var(--color-ghostteam-green)]/15 to-transparent rounded-full blur-3xl translate-x-1/2 translate-y-1/2" aria-hidden="true" />
-      <div className="absolute top-1/2 left-1/2 w-[400px] h-[400px] bg-gradient-to-r from-[var(--color-ghostteam-green)]/10 to-[var(--color-accent)]/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" aria-hidden="true" />
+    <section className="relative overflow-hidden bg-gradient-to-r from-teal-500 via-green-400 to-yellow-300 py-20 sm:py-32">
+      {/* Gradient overlay for depth */}
+      <div className="absolute inset-0 bg-gradient-to-br from-teal-400/30 via-emerald-400/20 to-amber-400/30" aria-hidden="true" />
 
       <div className="mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
         {/* Card container with off-white background */}
@@ -21,7 +19,7 @@ export function FreelancersHero() {
 
             {/* Main Heading */}
             <h1 className="text-4xl font-bold tracking-tight text-[var(--color-text-heading)] sm:text-5xl md:text-6xl mb-6">
-              ChatGPT is the next Google.
+              ChatGPT is the next Fiverr.
             </h1>
 
             {/* Description */}

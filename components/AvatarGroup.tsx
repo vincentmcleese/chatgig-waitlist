@@ -1,20 +1,20 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 interface AvatarGroupProps {
-  count: number;
   maxVisible?: number;
 }
 
-export function AvatarGroup({ count, maxVisible = 4 }: AvatarGroupProps) {
+export function AvatarGroup({ maxVisible = 5 }: AvatarGroupProps) {
   const avatars = [
-    { src: "/avatars/1.jpg", fallback: "JD" },
-    { src: "/avatars/2.jpg", fallback: "SA" },
-    { src: "/avatars/3.jpg", fallback: "MK" },
-    { src: "/avatars/4.jpg", fallback: "RL" },
+    { src: "https://i.pravatar.cc/150?img=1", fallback: "U1" },
+    { src: "https://i.pravatar.cc/150?img=5", fallback: "U2" },
+    { src: "https://i.pravatar.cc/150?img=8", fallback: "U3" },
+    { src: "https://i.pravatar.cc/150?img=12", fallback: "U4" },
+    { src: "https://i.pravatar.cc/150?img=15", fallback: "U5" },
   ];
 
   return (
-    <div className="flex items-center gap-3">
+    <div className="flex items-center justify-center">
       <div className="flex -space-x-2">
         {avatars.slice(0, maxVisible).map((avatar, i) => (
           <Avatar
@@ -28,12 +28,6 @@ export function AvatarGroup({ count, maxVisible = 4 }: AvatarGroupProps) {
           </Avatar>
         ))}
       </div>
-      <span className="text-sm text-[var(--color-text-muted)]">
-        <span className="font-semibold text-[var(--color-text-default)]">
-          +{count.toLocaleString()}
-        </span>{" "}
-        on the waitlist
-      </span>
     </div>
   );
 }

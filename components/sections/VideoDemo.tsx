@@ -14,33 +14,15 @@ export function VideoDemo() {
           </div>
 
           {/* Video Container */}
-          <div className="relative aspect-video bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-200">
-            {/* Placeholder for video - you can replace this with an actual video embed */}
-            <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-[var(--color-ghostteam-green)]/10 to-[var(--color-green-ultralight)]">
-              <div className="text-center">
-                <div className="w-20 h-20 mx-auto mb-4 bg-[var(--color-ghostteam-green)] rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform cursor-pointer">
-                  <svg
-                    className="w-8 h-8 text-white ml-1"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M8 5v14l11-7z" />
-                  </svg>
-                </div>
-                <p className="text-sm text-[var(--color-text-muted)]">
-                  Video demo coming soon
-                </p>
-              </div>
-            </div>
-
-            {/* Uncomment when you have a video URL */}
-            {/* <iframe
-              className="absolute inset-0 w-full h-full"
-              src="YOUR_VIDEO_URL"
-              title="Chat Gig Demo"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            /> */}
+          <div className="relative aspect-[4/3] bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-200">
+            <video
+              className="absolute inset-0 w-full h-full object-contain"
+              controls
+              preload="metadata"
+            >
+              <source src="/video/fiverr app in chatgpt website.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
       </div>

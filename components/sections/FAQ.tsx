@@ -9,7 +9,7 @@ const faqs = [
   {
     question: "How does Chat Gig work with ChatGPT?",
     answer:
-      "Chat Gig integrates seamlessly with ChatGPT through a plugin/extension. As you have a natural conversation about your project, Chat Gig analyzes the discussion and automatically generates a structured brief that captures all the important details.",
+      "Chat Gig integrates seamlessly with ChatGPT using the Apps SDK and Connector. As you have a natural conversation about your project, Chat Gig analyzes the discussion and automatically generates a structured brief that captures all the important details.",
   },
   {
     question: "Do I need to change how I use ChatGPT?",
@@ -29,12 +29,12 @@ const faqs = [
   {
     question: "Is there a free trial?",
     answer:
-      "We're currently in beta and building our waitlist. Early users will get exclusive access and special pricing when we launch. Join the waitlist to be notified when we're ready!",
+      "No, because it's free!",
   },
   {
     question: "How is Chat Gig different from other freelancer platforms?",
     answer:
-      "Chat Gig isn't a freelancer platform - it's a tool that helps you create better project briefs. You can use the generated briefs on any platform like Fiverr, Upwork, or Freelancer. We focus on making the brief creation process effortless.",
+      "Chat Gig is a new type of freelancer platform. It works directly in workflows where we are already making detailed project briefs and need a professional to get it across the finish line.",
   },
 ];
 

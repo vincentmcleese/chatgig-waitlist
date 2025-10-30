@@ -4,9 +4,9 @@ export function Footer() {
   return (
     <footer className="bg-[var(--color-ghostteam-black)] text-white">
       <div className="mx-auto max-w-7xl px-6 py-12 lg:px-8">
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+        <div className="flex flex-col lg:flex-row justify-between gap-8">
           {/* Brand */}
-          <div className="lg:col-span-1">
+          <div className="lg:max-w-sm">
             <div className="flex items-center gap-2 mb-4">
               <div className="w-8 h-8 bg-[var(--color-ghostteam-green)] rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-lg">CG</span>
@@ -19,7 +19,7 @@ export function Footer() {
           </div>
 
           {/* Product Links */}
-          <div className="lg:col-span-1">
+          <div>
             <h3 className="text-sm font-semibold uppercase tracking-wider mb-4">
               Product
             </h3>
@@ -54,47 +54,6 @@ export function Footer() {
                   className="text-gray-400 hover:text-[var(--color-ghostteam-green)] transition-colors text-sm"
                 >
                   Join Waitlist
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Company Links */}
-          <div className="lg:col-span-1">
-            <h3 className="text-sm font-semibold uppercase tracking-wider mb-4">
-              Company
-            </h3>
-            <ul className="space-y-3">
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-400 hover:text-[var(--color-ghostteam-green)] transition-colors text-sm"
-                >
-                  About
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-400 hover:text-[var(--color-ghostteam-green)] transition-colors text-sm"
-                >
-                  Contact
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-400 hover:text-[var(--color-ghostteam-green)] transition-colors text-sm"
-                >
-                  Privacy Policy
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-400 hover:text-[var(--color-ghostteam-green)] transition-colors text-sm"
-                >
-                  Terms of Service
                 </a>
               </li>
             </ul>
